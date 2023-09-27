@@ -2,19 +2,34 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first{
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/LAUNCHES_Starlink_SLC_40_Desktop_ad41fa5a42.jpg);
+}
+.first, .second, .third, .fourth, .fifth{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 50vw;
 }
 .navsection{
-     margin-top: 35px;
-     margin-bottom: 35px;
+    height: 100px;
      display: flex;
-     justify-content: space-around;
-     background-color: RGBA(255, 255, 255, 0.25);
+     justify-content: space-between;
+     padding-inline: 50px;
 }
 .first_navbar{
-    padding-top: 15px;
+    margin-block: auto;
+}
+.first_navbar img{
+    height: 30px;
+    width: 200px;
 }
 .middle_navbar{
     justify-content: space-between;
+    margin-block: auto;
 }
 .middle_navbar a{
     list-style-type: none;
@@ -22,36 +37,101 @@
     display: inline-block;
    padding: 5px;
    line-height: 26px;
-   font-size: 16px;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 400px;
-   color: black;
-   background-color: RGBA(255, 255, 255, 0.25);
-   text-decoration: none solid rgb(255, 255, 255);
-
+   font-size: 14px;
+   font-weight: 600;
+   color: white;
 }
 .middle_navbar a li{
     display: flex;
     justify-content: space-evenly;
-
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease-in-out;
+}
+.middle_navbar a li:hover{
+border-bottom: 2px solid white;
 }
 .ending_navbar{
     list-style-type: none;
-    padding-top: 5px;
+    padding-block: 5px;
     line-height: 26px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400px;
-    color: black;
-    background-color: RGBA(255, 255, 255, 0.25);
+    font-weight: 600;
     text-decoration: none solid rgb(255, 255, 255);
+    margin-block: auto;
 }
 .ending_navbar a{
     list-style-type: none;
     text-decoration: none;
-    color: black;
-    /* padding-top: 15px; */
+    color: white;
+}
+.ending_navbar a li{
+    border-bottom: 2px solid transparent;
+}
+.ending_navbar a li:hover{
+    border-bottom: 2px solid white;
 }
 .last_navbar{
-    padding-top: 10px;
+   margin-block: auto;
+    color: white;
+}
+.herosection{
+   color: white;
+   padding-left: 50px;
+   bottom: 15%;
+   position: absolute;
+}
+.herosection p{
+    font-size: 20px;
+}
+.herosection h1{
+    font-size: 35px;
+    line-height: 60px;
+}
+.herosection button{
+    padding: 20px 35px;
+    text-align: center;
+    background-color: transparent;
+    line-height: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    border: 2px solid white;
+    margin-top: 20px;
+    transition: ease-in-out
+}
+.herosection button:hover {
+    color: black;
+background-color: white;
+}
+.second{
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_G7_3_OS_56_5196_Desktop_501dcd8c6a.jpg);
+}
+.third{
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_18_092323_DSC_8011_desktop_9e1cff5245.jpg);
+}
+.fourth{
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_6_Desktop_9857f5c2f0.jpg);
+}
+.fifth{
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg);
+}
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 90px;
+    font-size: 12px;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    font-weight: 600;
+    transition: all .7s ease;
+}
+#footer a:hover{
+    color: rgb(85, 87, 104);
 }
